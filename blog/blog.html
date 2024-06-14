@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<!-- Background Video! This will play over the image. -->
+<video id="bgVideo" preload="true" autoplay loop muted>
+    <source src="../material/Home.mp4" type="video/mp4" />
+</video>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blog</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!-- JQuery   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Personal -->
+    <script src="../Global.js"></script>
+    <!-- Personal -->
+    <link rel="stylesheet" type="text/css" href="../Global.css" />
+</head>
+
+<body>
+    <img class="logo-img" src="../material/logo.png">
+    <header>
+        <nav>
+            <!-- This doesn't need a div, I can just style the nav element directly. -->
+            <ul>
+                <li><a href="../Global.html" class="navButton">Home</li></a>
+                <li><a href="../about/about.html" class="navButton">About</a></li>
+                <li><a href="#" class="navButton" style="color:#c56ade;">Blog</a></li>
+                <li><a href="../contact/contact.html" class="navButton">Hire us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flexbox-container">
+            <div class="flexbox-item" id="flexbox-item-1">
+
+                <h3 class="monofont left">in the world of web development...</h3>
+                <h1 class="left">Check our Blog.</h1>
+                <hr> <br>
+                <div class="flexbox-small-container">
+                    <section>
+
+
+                        <article>
+                            <h2>My Todo List</h2>
+                            <h3>Author: <i>Ross & Riley.</i></h3>
+                            <p class="date">Published on: November 11, 2023</p>
+
+                            <ol>
+                                <li>
+                                    Theme Selection:
+                                    <ul>
+                                        <li>☑ Choose a theme of your choice for your webpage.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    HTML Usage:
+                                    <ul>
+                                        <li>☑ Create a well-structured webpage using HTML.</li>
+                                        <li>☑ Include headings, paragraphs, articles, links, images, buttons, lists,
+                                            tables and a video from the web.</li>
+                                        <li>☐ <i>Maybe stop spending so much time on HTML.</i></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    CSS Styling:
+                                    <ul>
+                                        <li>☑ Implement CSS to style your webpage. You should:
+                                            <ul>
+                                                <li>✓ Change text color, use different fonts.</li>
+                                                <li>✓ Add background colors/ images, borders.</li>
+                                                <li>✓ Use margin, padding, and outline boxes.</li>
+                                                <li>✓ Ensure that your design is consistent and visually appealing.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Responsive Design:
+                                    <ul>
+                                        <li>☑ Make your webpage fully responsive to different devices using media
+                                            queries.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Navigation Bar:
+                                    <ul>
+                                </li>☑ Create a functional navigation bar with at least 4 menu items.</li>
+                                <li>☑ Ensure that menu items link to the relevant sections of your webpage.</li>
+                                </ul>
+                                </li>
+                                <li>
+                                    Contact form:
+                                    <ul>
+                                        <li>
+                                            ☑ Include a contact form in your webpage. The form should:
+                                            <ul>
+                                                <li>✓ Have fields for Name, Email, Telephone Number, and a Message.</li>
+                                                <li>✓ Implement HTML validation to check for a valid email format and a
+                                                    specific telephone number length.</li>
+                                                <li>✓ The “Message” field should have a maximum character limit of 200
+                                                    characters. Implement JavaScript to count and display the number of
+                                                    characters entered in the “Message” field in real-time.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    JavaScript Interaction:
+                                    <ul>
+                                        <li>☑ Use jQuery to create interactions on your webpage. You should:
+                                            <ul>
+                                                <li>✓ Implement alerts to provide feedback to users.</li>
+                                                <li>Add a onmouseover event that triggers changes in the interface.</li>
+                                                <li>Use a onkeydown event to create interactivity when a key is pressed.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Content Quality:
+                                    <ul>
+                                        <li>☑ Ensure the content on your webpage is high-quality, relevant to your
+                                            chosen theme, and well-written with proper spelling and grammar.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Creativity and Originality:
+                                    <ul>
+                                        <li>☑ Add creative and original elements to your webpage's design or content to
+                                            make it unique.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Documentation and Code Organization:
+                                    <ul>
+                                        <li>☑ Keep your project files well-organized.</li>
+                                        <li>☑ Provide clear documentation within your code using comments to explain its
+                                            structure and functionality.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                            <a href="#"
+                                title="This doesn't do anything yet; it's a proof of concept. It would lead to new HTML files.">Read
+                                more</a>
+                        </article>
+
+                        <article>
+                            <h2>Price gouging at Webdev Town</h2>
+                            <h3>Author: <i>Liam & Lyle.</i></h3>
+                            <p class="date">Published on: November 7, 2023</p>
+                            <p>Oh my GOD can you check this table?! How do you even justify these prices?!</p>
+
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Website Design</td>
+                                        <td>Custom website design to fit your brand and goals.</td>
+                                        <td>$1000+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Front-end Development</td>
+                                        <td>Building interactive and responsive user interfaces.</td>
+                                        <td>Starting from $800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Back-end Development</td>
+                                        <td>Creating robust server-side applications and databases.</td>
+                                        <td>Starting from $1200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Web Hosting</td>
+                                        <td>Reliable hosting solutions for your website.</td>
+                                        <td>Starting from $15/month</td>
+                                    </tr>
+                                </tbody>
+                            </table> <br>
+                            <a href="#"
+                                title="This doesn't do anything yet; it's a proof of concept. It would lead to new HTML files.">Read
+                                more</a>
+                        </article>
+
+
+                        <article>
+                            <h2>Background noise helps you code</h2>
+                            <h3>Author: <i>Luther & Lex.</i></h3>
+                            <p class="date">Published on: November 6, 2023</p>
+                            <iframe width="1046" height="588" src="https://www.youtube.com/embed/W7BgUPzG2-s"
+                                title="The sound of rain that calms your mind, the drops that knock on the jar, ASMR for deep sleeping."
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <p>This is a really calming video I found, and I think you should have it! Stimulating
+                                background noise can help some people stay productive while they work.</p>
+                            <a href="#"
+                                title="This doesn't do anything yet; it's a proof of concept. It would lead to new HTML files.">Read
+                                more</a>
+                        </article>
+
+
+                        <article>
+                            <h2>The website is real!</h2>
+                            <h3>Author: <i>Mario & Miles.</i></h3>
+                            <p class="date">Published on: November 5, 2023</p>
+                            <img src="https://i.imgur.com/NPJ5wlb.jpg" class="blog-img">
+                            <p>
+                                HELLOOOOOOOOOOOOOOOOOOOOOOOO WORLDDDDDDDDDDDDDDDDDDDDDDDDDDD
+                            </p>
+
+                            <a href="#"
+                                title="This doesn't do anything yet; it's a proof of concept. It would lead to new HTML files.">Read
+                                more</a>
+                        </article>
+
+                        <!-- Copy the entire flexbox-small-item div for new articles. -->
+                    </section>
+
+                    <footer>
+                        <p><i>© Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas, 2982-3005.</i></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

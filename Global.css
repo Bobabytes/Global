@@ -1,0 +1,574 @@
+/* Global Styling */
+html {
+    /* Custom font! */
+    font-family: 'Playfair Display', 'Verdana', 'Times New Roman', serif;
+    text-align: center;
+    background: #08090a;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* Place the content above the background video. */
+    z-index: 1;
+    /* In case I want a button to take me down to a certain #id */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Creating an animation for when the page loads. */
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+footer {
+    opacity: 80%;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    /* For some reason, font-size doesn't work on the footer. */
+    font-size: medium;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+#bgVideo {
+    /* Eliminate the html padding. */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video covers the entire viewport */
+    z-index: -2;
+    /* Places the video behind other elements */
+    margin: 0;
+    padding: 0;
+
+    background-size: cover;
+    overflow: hidden;
+}
+
+.logo-img {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    opacity: 70%;
+    height: 50px;
+    width: auto;
+    z-index: -1;
+}
+
+
+
+/* I will use flexbox principles for the main content. */
+/* Container for the big containers */
+.flexbox-container {
+    display: grid;
+    place-items: center;
+}
+
+/* Big container for smaller containers */
+.flexbox-item {
+    opacity: 95%;
+    width: 80%;
+    min-width: 300px;
+    min-height: 700px;
+    padding: 10px;
+    margin: 10px;
+    color: whitesmoke;
+    background-color: #08090a;
+    border-radius: 7px;
+    box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Small container */
+.flexbox-small-container {
+    display: flex;
+    flex-flow: row wrap;
+    place-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.flexbox-small-item {
+    max-width: 50%;
+    height: auto;
+}
+
+
+#flexbox-item-bg {
+    background-image: url("material/liquilowp2.png");
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+/* Flexbox end. */
+
+/* General Styling */
+h1 {
+    font-size: xxx-large;
+}
+
+p {
+    padding: 20px;
+    margin: 20px;
+    border: 10px;
+    font-size: x-large;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    text-align: justify;
+}
+
+a {
+    color: #c56ade;
+    font-family: "Playfair Display", Verdana, Tahoma;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    border: 1px solid whitesmoke;
+    width: 20%;
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    /* Add smooth transition effect */
+}
+
+/* General Styling End */
+
+
+/* Specific Styling */
+#buttonpress {
+    text-align: left;
+    font-size: xx-large;
+    align-items: center;
+}
+
+#r-key {
+    width: auto;
+    height: 30px;
+
+}
+
+.left {
+    margin-left: 25px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.highlight {
+    color: #c56ade;
+}
+.lowpacity {
+    opacity: 50%;
+}
+
+.highlight-border {
+    border-left: 1px solid #c56ade;
+}
+
+.monofont {
+    font-family: 'Orator STD';
+}
+
+#contact-img {
+    width: 50%;
+}
+
+table {
+    background-color: #101214;
+    font-size: larger;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+/* Specific Styling End */
+
+
+/* Navigation bar */
+nav ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
+nav li {
+    padding: 10px 0px;
+    margin: 10px 15px;
+    /* Add spacing between navigation items */
+    display: inline;
+    /* Use inline to create a horizontal layout */
+    justify-content: center;
+    /* Center-align the list items */
+    background-color: #101214;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav li a {
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Navigation bar end */
+
+/* Use these for the <a href> buttons at the navigation bar. */
+.navButton {
+    box-shadow: 10px 2px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navButton:hover {
+    color: #c56ade;
+    /* c56ade */
+    box-shadow: 0px 0px 65px 20px #c56ade;
+    transition: color 2s;
+    transition: box-shadow 1s;
+    text-decoration: none;
+}
+
+/* Run this style on smaller devices. */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        margin: 8px 8px;
+        /* Add space between navigation items */
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    /* Remove padding on various elements to achieve more space */
+    .flexbox-container {
+        padding-top: 0;
+        /* Change the image inside the container */
+    }
+
+    .flexbox-item {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        text-wrap: pretty;
+    }
+
+    .flexbox-small-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .flexbox-small-item {
+        max-width: 100%;
+        flex-grow: 1;
+    }
+
+    body {
+        padding: 0;
+        margin: 5px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-self: left;
+        width: 90%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        margin: 5px 45px;
+        padding: 5px 5px;
+        font-size: large;
+        text-wrap: balance;
+    }
+
+    article {
+        width: 85%;
+    }
+
+    article p {
+        text-wrap: pretty;
+    }
+
+    footer p {
+        font-size: smaller;
+    }
+
+    .logo-img {
+        height: 3%;
+    }
+}
+
+/* Smaller Device Styling End */
+
+/* I just think these look nice. Credit: Google Fonts. */
+@font-face {
+    font-family: "Playfair Display";
+    src: url(PlayfairDisplay.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Display Italics";
+    src: url(PlayfairDisplay-Italics.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Orator STD";
+    src: url(Orator-Std-Font.otf) format("opentype");
+}
+
+/* I'll be selectively using this font, so I'll make an id for it. */
+
+/* Animation that plays when the page loads. */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Blog Page Styling */
+article {
+
+    border-right: 4px solid #c56ade;
+    margin-bottom: 40px;
+    padding: 20px 20px;
+    margin: 10px;
+    background-color: rgb(26, 26, 31);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+article a {
+    bottom: 5px;
+}
+
+article p {
+    font-family: 'Playfair Display Italics', 'Verdana', 'Times New Roman', serif;
+    text-wrap: pretty;
+}
+
+.date {
+    color: rgba(195, 131, 248, 1);
+}
+
+.blog-img {
+    padding: 0px 20px;
+}
+
+/* Blog Page Styling End */
+
+
+/* Contact Page Styling */
+textarea {
+    resize: none;
+    border-radius: 5px;
+}
+
+#information-message {
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#character-count {
+    font-size: medium;
+}
+
+.hire-request {
+    display: flex;
+    width: 100%;
+
+
+    flex-direction: column;
+
+    -ms-flex-align: center;
+    align-items: center;
+
+    color: #fff;
+}
+
+.checkbox-group {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    place-content: space-evenly;
+    border: 2px solid whitesmoke;
+    height: 150px;
+    width: 80%;
+}
+
+.information-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.contact-label {
+    margin: 5px 10px;
+}
+
+#character-count {
+    padding: 2px;
+    margin: 0;
+    color: gainsboro;
+
+}
+
+.information {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: 40%;
+    max-width: 100%;
+    height: 50px;
+    font-size: large;
+
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #cccccc5b;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    margin-top: 100px;
+    font-size: x-large;
+    width: 60%;
+    max-width: 100%;
+    line-height: 50px;
+    font-weight: 700;
+    text-wrap: nowrap;
+    background-color: #0e080f50;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+
+/* Contact Styling End */
+
+
+/* Checkbox button animation, from W3. */
+.checkbox-wrapper-1 *,
+.checkbox-wrapper-1 ::after,
+.checkbox-wrapper-1 ::before {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted {
+    margin: 10px 10px;
+    width: 0;
+    height: 0;
+    display: inline;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted+label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 0.6em;
+    color: rgba(0, 0, 0, 0.275);
+    border: solid 0.06em;
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
+    border-radius: 0.2em;
+    background: no-repeat center, white;
+    background-size: 0;
+    will-change: color, border, background, background-size, box-shadow;
+    transform: translate3d(0, 0, 0);
+    transition: color 0.1s, border 0.1s, background 0.15s, box-shadow 0.1s;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:enabled:active+label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted:enabled+label:active:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset;
+    background-color: #f0f0f0;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:checked+label:before {
+    background-color: #c56ade;
+    background-size: 0.75em;
+    color: rgba(0, 0, 0, 0.075);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled:active+label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled+label:active:before {
+    background-color: #c56ade;
+    color: rgba(0, 0, 0, 0.275);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:focus+label:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(255, 144, 253, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:focus:active+label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted:focus+label:active:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(255, 144, 253, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted:disabled+label:before {
+    opacity: 0.5;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark+label:before {
+    color: rgba(255, 255, 255, 0.275);
+    background-color: #222;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled:active+label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled+label:active:before {
+    background-color: #444;
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(255, 255, 255, 0.1) inset;
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:checked+label:before {
+    background-color: #a97035;
+    color: rgba(255, 255, 255, 0.075);
+}
+
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled:active+label:before,
+.checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled+label:active:before {
+    background-color: #c68035;
+    color: rgba(0, 0, 0, 0.275);
+}
+
+/* W3 Checkbox Button Code End. */

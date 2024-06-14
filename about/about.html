@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<!-- Background Video! This will play over the image. -->
+<video id="bgVideo" preload="true" autoplay loop muted>
+    <source src="../material/Home.mp4" type="video/mp4" />
+</video>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!-- JQuery   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Personal -->
+    <script src="../Global.js"></script>
+    <!-- Personal -->
+    <link rel="stylesheet" type="text/css" href="../Global.css" />
+</head>
+
+<body>
+    <img class="logo-img" src="../material/logo.png">
+    <header>
+        <nav>
+            <!-- This doesn't need a div, I can just style the nav element directly. -->
+            <ul>
+                <li><a href="../Global.html" class="navButton">Home</li></a>
+                <li><a href="#" class="navButton" style="color:#c56ade;">About</a></li>
+                <li><a href="../blog/blog.html" class="navButton">Blog</a></li>
+                <li><a href="../contact/contact.html" class="navButton">Hire us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flexbox-container">
+            <div class="flexbox-item" id="flexbox-item-1">
+                <h3 class="monofont left">the person behind the website...</h3>
+                <h1 class="left">Hi! I'm me.</h1>
+                <hr>
+                <div class="flexbox-small-container">
+                    <div class="flexbox-small-item" id="left">
+                        <p>
+                            <span class="highlight">▹</span> Code connoisseur, web wizard, and boundary-breaking
+                            computer science maverick;
+                            I'm fusing artistic flair with technological mastery to revolutionize the digital realm.
+                            <br><br>
+                            <span class="highlight">▹</span> This is a website I've made in the span of two weeks for my
+                            Web Programming course.
+                            I hope my Professor is impressed! He deserves no less in terms of effort.
+                            <br><br>
+                            <span class="highlight">▹</span> Some developer commentary: <br> The HTML was
+                            by <i>far</i> the most time-consuming. Figuring out what I liked and making a
+                            cohesive(I hope) theme was more difficult than any JS implementation - and
+                            throughout these two weeks, I taught the principles of flexboxes to myself so
+                            I can make it all dynamic. Experimenting with CSS styles is a bottomless pit
+                            that I could spend weeks upon weeks playing around with, but I really like this
+                            sleek card theme; one that I learned from our Wizarding Quiz example. The images
+                            you see throughout this website have been compiled, recolored and edited by me
+                            via Photoshop, although the source material for all the assets on this website
+                            were found on Freepik and PngEgg, while the fonts were found on Adobe Fonts and
+                            Google Fonts.
+                        </p>
+                    </div>
+                    <div class="flexbox-small-item">
+                        <img src="../material/Global3.png">
+                    </div>
+                    <footer>
+                        <p><i>© Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas, 2982-3005.</i></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

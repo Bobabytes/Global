@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+<!-- Background Video! This will play over the image. -->
+<video id="bgVideo" preload="true" autoplay loop muted>
+    <source src="../material/Home.mp4" type="video/mp4" />
+</video>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hire us!</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- JQuery   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Personal -->
+    <script src="../Global.js"></script>
+    <!-- Personal -->
+    <link rel="stylesheet" type="text/css" href="../Global.css" />
+</head>
+
+<body>
+    <img class="logo-img" src="../material/logo.png">
+    <header>
+        <nav>
+            <!-- This doesn't need a div, I can just style the nav element directly. -->
+            <ul>
+                <li><a href="../Global.html" class="navButton">Home</li></a>
+                <li><a href="../about/about.html" class="navButton">About</a></li>
+                <li><a href="../blog/blog.html" class="navButton">Blog</a></li>
+                <li><a href="#" class="navButton" style="color:#c56ade;">Hire us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flexbox-container">
+            <div class="flexbox-item" id="flexbox-item-1">
+                <h3 class="monofont left">the ideal services for you</h3>
+                <h1 class="left">Hire us.</h1>
+                <hr>
+                <div class="flexbox-small-container">
+                    <div class="flexbox-small-item">
+                        <h2>You want us to do... <br></h2>
+                        <form class="hire-request" id="hire-request-form">
+                            <div class="checkbox-group">
+                                <div class="checkbox-wrapper-1">
+                                    <input id="gd-checkbox" class="substituted" type="checkbox" aria-hidden="true" />
+                                    <label for="gd-checkbox">Graphic Design</label>
+                                </div>
+                                <div class="checkbox-wrapper-1">
+                                    <input id="uiux-checkbox" class="substituted" type="checkbox" aria-hidden="true" />
+                                    <label for="uiux-checkbox">UI/UX Design</label>
+                                </div>
+
+                                <div class="checkbox-wrapper-1">
+                                    <input id="mrktng-checkbox" class="substituted" type="checkbox"
+                                        aria-hidden="true" />
+                                    <label for="mrktng-checkbox">Marketing</label>
+                                </div>
+
+                                <div class="checkbox-wrapper-1">
+                                    <input id="fd-checkbox" class="substituted" type="checkbox" aria-hidden="true" />
+                                    <label for="fd-checkbox">Front-End Development</label>
+                                </div>
+
+                                <div class="checkbox-wrapper-1">
+                                    <input id="bd-checkbox" class="substituted" type="checkbox" aria-hidden="true" />
+                                    <label for="bd-checkbox">Back-End Development</label>
+                                </div>
+                            </div>
+
+                            <div class="information-container">
+                                <div class="information" id="information-name">
+                                    <label for="name" class="contact-label">Name</label>
+                                    <input id="name" type="text" placeholder="Your Name." required>
+
+                                </div>
+                                <div class="information" id="information-email">
+                                    <label for="email" class="contact-label">Email</label>
+                                    <input id="email" type="email" placeholder="Your Email." required>
+
+                                </div>
+                                <div class="information" id="information-number">
+                                    <label for="phone" class="contact-label">Telephone</label>
+                                    <input id="phone" type="tel" name="phone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}"
+                                        placeholder="Your Phone Number." required>
+                                </div>
+
+                                <div class="information">
+
+                                    <label for="information-message" class="contact-label">Leave a Message</label>
+                                    <textarea rows="5" cols="50" id="information-message" class="information-message"
+                                        name="message" form="hire-request-form"
+                                        placeholder="Enter text here..."></textarea>
+                                    <p id="character-count">0/200</p>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-button monofont" id="information-submit-button">send
+                                request</button>
+
+                        </form>
+                    </div>
+                    <div class="flexbox-small-item">
+                        <img src="../material/Global1.png">
+                    </div>
+                    <footer>
+                        <p><i>© Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas, 2982-3005.</i></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
